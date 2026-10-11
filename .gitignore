@@ -1,0 +1,35 @@
+# Python bytecode and runtime caches: regenerable automatically by the interpreter
+__pycache__/
+*.py[cod]
+*$py.class
+.python-version
+
+# Virtual environments: machine-local, recreated from pyproject/requirements
+.venv/
+venv/
+env/
+ENV/
+
+# Test, type-checker, and linter caches: regenerable tool artefacts
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# Build and distribution outputs: produced by packaging, not source
+build/
+dist/
+*.egg-info/
+
+# Editors and operating system noise: personal/local settings
+.idea/
+.vscode/
+.DS_Store
+
+# Generated experiment artefacts: strategy tables, Q tables, and bankroll curves
+# are reproducible via the CLI (derive / train / simulate)
+data/*.json
+data/*.csv
